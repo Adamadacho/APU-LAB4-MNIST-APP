@@ -1,14 +1,12 @@
-#Zainstalowanie Tensorflow i Keras
-import numpy as np
-import keras
 import tensorflow as tf
+import keras
+
 from keras import layers
-
-
+import numPy as np
 
 # Ladowanie i przygotowanie zestawu danych
 # Model / data parameters
-num_classes = 10
+num_classes = 100
 input_shape = (28, 28, 1)
 # Load the data and split it between train and test sets
 (x_train, y_train), (x_test, y_test) = keras.datasets.cifar100.load_data(label_mode="fine")
